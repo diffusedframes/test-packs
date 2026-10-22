@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Read the test packs and measurement protocol
+    url: https://github.com/diffusedframes/test-packs#readme
+    about: Start here before running or submitting a test.
+  - name: Private questions or removal requests
+    url: https://www.diffusedframes.com/privacy/
+    about: Contact hello@diffusedframes.com. Do not post private information in a public issue.

@@ -1,0 +1,94 @@
+{
+  "id": "ltx-i2v-01",
+  "version": "0.1.0-pilot",
+  "title": "LTX 2.5 image-to-video: glass portals",
+  "status": "pilot-baseline-pending",
+  "createdAt": "2026-10-22",
+  "validation": {
+    "structuralChecks": "passed-file-and-graph-checks-only",
+    "gpuRun": false,
+    "referenceEnvironment": null,
+    "referenceOutputs": []
+  },
+  "source": {
+    "repository": "https://github.com/Comfy-Org/workflow_templates",
+    "revision": "447747bf37b7e2f6d5fab3f15288e03bf889b82f",
+    "path": "templates/video_ltx2_5_i2v.json",
+    "license": "MIT"
+  },
+  "software": {
+    "upstreamDeclaredComfyCore": "0.30.0",
+    "testedComfyUI": null,
+    "frontend": "ComfyUI frontend supporting subgraphs",
+    "customNodes": []
+  },
+  "preset": {
+    "width": 1280,
+    "height": 736,
+    "durationSettingSeconds": 3,
+    "frames": 73,
+    "fps": 24,
+    "precision": "INT8 convrot transformer and text encoder; BF16 video/audio VAE and upscaler",
+    "promptEnhance": false,
+    "sampler": "euler_ancestral",
+    "firstStageSteps": 8,
+    "refinementSteps": 3,
+    "coldSeed": 41000,
+    "repeatSeeds": [
+      41001,
+      41002,
+      41003
+    ],
+    "refinementSeed": 42,
+    "audio": "video and audio generation/decoding retained from upstream",
+    "videoEncoding": "upstream auto; report actual container and codec"
+  },
+  "models": [
+    {
+      "filename": "ltx-2.5-22b-distilled-transformer-comfy-int8-convrot.safetensors",
+      "directory": "models/diffusion_models",
+      "revision": "49b093a39c19169a8a81721dcc541e07e945232f",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5/resolve/49b093a39c19169a8a81721dcc541e07e945232f/diffusion_models/ltx-2.5-22b-distilled-transformer-comfy-int8-convrot.safetensors"
+    },
+    {
+      "filename": "gemma4-12b-with-proj-ltx-2.5-comfy-int8-convrot.safetensors",
+      "directory": "models/text_encoders",
+      "revision": "49b093a39c19169a8a81721dcc541e07e945232f",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5/resolve/49b093a39c19169a8a81721dcc541e07e945232f/text_encoders/gemma4-12b-with-proj-ltx-2.5-comfy-int8-convrot.safetensors"
+    },
+    {
+      "filename": "ltx-2.5-video-vae-bf16.safetensors",
+      "directory": "models/vae",
+      "revision": "49b093a39c19169a8a81721dcc541e07e945232f",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5/resolve/49b093a39c19169a8a81721dcc541e07e945232f/vae/ltx-2.5-video-vae-bf16.safetensors"
+    },
+    {
+      "filename": "ltx-2.5-audio-vae-bf16.safetensors",
+      "directory": "models/vae",
+      "revision": "49b093a39c19169a8a81721dcc541e07e945232f",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5/resolve/49b093a39c19169a8a81721dcc541e07e945232f/vae/ltx-2.5-audio-vae-bf16.safetensors"
+    },
+    {
+      "filename": "ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors",
+      "directory": "models/latent_upscale_models",
+      "revision": "49b093a39c19169a8a81721dcc541e07e945232f",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5/resolve/49b093a39c19169a8a81721dcc541e07e945232f/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors"
+    }
+  ],
+  "input": {
+    "path": "inputs/df-portals-start.png",
+    "width": 1672,
+    "height": 941,
+    "source": "Diffused Frames AI-generated original",
+    "permission": "See README.md"
+  },
+  "files": {
+    "inputs/df-portals-start.png": "c2e28dcb5c5bc51922ccd4073264da7a71fd3ed109b16637de8a4c4955d67c39",
+    "licenses/Comfy-workflow-templates-MIT.txt": "5dccd61c80c847cd6b22fa98124010163ab8646e573557a16a5cae31122f2056",
+    "prompt.txt": "f987975aabf411ab780df3bcf18f942af6ba5a919a0b142fed268a79973d1b72",
+    "PROTOCOL.md": "187a5ad234fbfeba7aefd2053dcd252b1ad42cd95981f5c1ce6f85dd66ca6dc7",
+    "README.md": "ad5e86f2d94622f3341d8fdf6a7afd07e08c07b7c643e9c6bf4e4d1c6d69027e",
+    "results.csv": "6d9098bf40b991be148302c7829695b0e0b4d177c7feb2a5198c02aecf647324",
+    "workflow.json": "963a48d5b3d07e95e593d0515edb32f393bb3ddfe6b4eaa0cae5944946060a99"
+  }
+}

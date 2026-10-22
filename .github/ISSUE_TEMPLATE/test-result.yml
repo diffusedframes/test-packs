@@ -1,0 +1,133 @@
+name: Contribute a test result
+description: Share your hardware, settings, timings and output evidence for a Diffused Frames test pack.
+title: "[Result] LTX I2V 01 — "
+labels: [community-result, needs-review]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing. **This issue and its attachments will be public immediately.** A GitHub account is required. Results are reviewed before selection for diffusedframes.com; submission is not verification. Keep private data and client material out of workflows and logs.
+
+        The first LTX pack is a **pilot with no reference GPU run yet**. Failed or out-of-memory attempts are welcome. Do not present pilot results as a verified GPU ranking.
+  - type: input
+    id: pack
+    attributes:
+      label: Pack ID and version
+      placeholder: ltx-i2v-01 / 0.1.0-pilot
+    validations:
+      required: true
+  - type: input
+    id: run-date
+    attributes:
+      label: Run date
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+  - type: dropdown
+    id: execution
+    attributes:
+      label: Where did the workflow run?
+      options:
+        - Local GPU
+        - Rented or hosted cloud GPU
+    validations:
+      required: true
+  - type: input
+    id: hardware
+    attributes:
+      label: GPU and dedicated VRAM
+      placeholder: Exact GPU model; VRAM in GB; number of GPUs used
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: System and software
+      description: Include CPU, RAM, OS, GPU driver, ComfyUI, Python, PyTorch/CUDA, attention backend and any custom-node revisions. Write unknown where needed.
+      placeholder: List the versions actually used, not just the versions requested by the pack.
+    validations:
+      required: true
+  - type: dropdown
+    id: preset
+    attributes:
+      label: Preset fidelity
+      options:
+        - Supplied preset unchanged
+        - Modified preset — changes described below
+    validations:
+      required: true
+  - type: textarea
+    id: settings
+    attributes:
+      label: Models, settings and changes
+      description: List model filenames/revisions, precision, resolution, frames/FPS, seeds, sampling/decoding settings and any offloading, tiling or other changes. Link the exact sanitized workflow you ran.
+    validations:
+      required: true
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: Outcome
+      options:
+        - Completed all measured runs
+        - Completed some measured runs
+        - Out of memory
+        - Missing model or node / compatibility problem
+        - Other failure
+    validations:
+      required: true
+  - type: textarea
+    id: timings
+    attributes:
+      label: Timings and measurement method
+      description: Use seconds. Separate first run from repeat runs. Include each seed/status/time and explain timing scope, queue time and cache handling. For failures describe where it stopped. You can attach the pack CSV here.
+      placeholder: |
+        First run (seed 41000):
+        Repeat 1 (seed 41001):
+        Repeat 2 (seed 41002):
+        Repeat 3 (seed 41003):
+        Timing method and scope:
+        Queue time included/excluded:
+        Cache handling / evidence of fresh sampling:
+    validations:
+      required: true
+  - type: input
+    id: vram
+    attributes:
+      label: Peak VRAM and measurement method (optional)
+      description: State GB or GiB and the tool/metric used. Leave blank if not measured.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Outputs, workflow and sanitized logs
+      description: Attach files or paste public links. Include every measured output and the workflow used. For failed runs provide an error/log or screenshot. No private paths, keys or account details.
+    validations:
+      required: true
+  - type: textarea
+    id: observations
+    attributes:
+      label: Shot quality and practical observations
+      description: Mention geometry, camera movement, temporal stability, unwanted text/objects, failures, retries or cleanup. For a failed run, explain the failure.
+    validations:
+      required: true
+  - type: dropdown
+    id: publication
+    attributes:
+      label: Permission to feature this contribution
+      description: You keep ownership. Any website feature will credit your GitHub username and link this issue. This choice does not change the public visibility of the GitHub issue.
+      options:
+        - Measurements, notes and submitted media may be featured
+        - Measurements and notes only — link to media without republishing it
+        - GitHub discussion only — do not feature on the website
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: These observations are from runs I actually performed; unavailable values are identified as unmeasured.
+          required: true
+        - label: I understand that this issue and its attachments are public, and have removed private information.
+          required: true
+        - label: I have permission to share the attached inputs, outputs and workflow.
+          required: true

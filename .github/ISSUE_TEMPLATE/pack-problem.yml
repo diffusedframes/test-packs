@@ -1,0 +1,27 @@
+name: Report a pack problem
+description: Report a missing node, broken asset, documentation issue or reproducibility problem.
+title: "[Pack problem] "
+labels: [pack-problem, needs-review]
+body:
+  - type: markdown
+    attributes:
+      value: "This issue is public. Remove personal paths, keys and client material from attachments. No generation is triggered by submitting this form."
+  - type: input
+    id: pack
+    attributes:
+      label: Pack ID and version
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Setup, reproduction steps and sanitized evidence
+      description: Include ComfyUI version, GPU/VRAM and relevant model/node versions; attach a sanitized log or screenshot if available.
+    validations:
+      required: true
