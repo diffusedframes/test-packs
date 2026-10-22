@@ -8,7 +8,7 @@ Repeatable tests for AI video, VFX and filmmaking. Download the same inputs and 
 
 | Pack | Version | State |
 | --- | --- | --- |
-| [LTX 2.5 image-to-video: glass portals](packs/ltx-i2v-01/README.md) | 0.1.1-pilot | Pilot · baseline render pending |
+| [LTX 2.5 image-to-video: a cafe moment](packs/ltx-i2v-01/README.md) | 0.2.0-pilot | Pilot · baseline render pending |
 
 The first pack contains an adapted ComfyUI workflow, a shared first frame, an exact prompt, model references, settings, a timing protocol and a blank results sheet. **No GPU workflow has been run or performance result claimed for this pack.** Pilot contributions can help identify compatibility problems; they are not a verified benchmark or a GPU ranking.
 

@@ -1,4 +1,4 @@
-# Run protocol · ltx-i2v-01 / 0.1.1-pilot
+# Run protocol · ltx-i2v-01 / 0.2.0-pilot
 
 **Pilot:** no reference render has been executed. If a control or output differs from this description, report it as a compatibility observation rather than inventing a measurement. No ComfyUI instance, GPU or model is contacted by these documentation files.
 
@@ -32,10 +32,11 @@ For a summary, report the median of the three successful repeat durations only w
 
 Watch every measured output at normal speed, then inspect matching early/middle/late frames. Note:
 
-- slow continuous forward/right camera motion;
-- straight glass edges and stable mountain geometry;
-- reflection coherence and temporal stability;
-- unwanted text, logos, people, new objects, flashes or cuts;
+- a slight natural head turn towards the camera and a smooth push-in;
+- consistent facial identity, hair, coat and sweater;
+- believable hand contact and a stable red cup and handle, with the cup staying on the table;
+- coherent warm/cool lighting, rain reflections, background depth and temporal stability;
+- unwanted text, logos, extra fingers, new objects, flashes or cuts;
 - how many of the three repeat shots meet the README acceptance criteria;
 - any manual repair or extra generation required, recorded separately from measured workflow time.
 

@@ -1,7 +1,7 @@
 {
   "id": "ltx-i2v-01",
-  "version": "0.1.1-pilot",
-  "title": "LTX 2.5 image-to-video: glass portals",
+  "version": "0.2.0-pilot",
+  "title": "LTX 2.5 image-to-video: a cafe moment",
   "status": "pilot-baseline-pending",
   "createdAt": "2026-10-22",
   "validation": {
@@ -76,19 +76,19 @@
     }
   ],
   "input": {
-    "path": "inputs/df-portals-start.png",
+    "path": "inputs/df-cafe-start.png",
     "width": 1672,
     "height": 941,
-    "source": "Diffused Frames AI-generated original",
+    "source": "Original fictional cafe film still generated for Diffused Frames with built-in imagegen; not footage of real people or a real cafe",
     "permission": "See README.md"
   },
   "files": {
-    "inputs/df-portals-start.png": "c2e28dcb5c5bc51922ccd4073264da7a71fd3ed109b16637de8a4c4955d67c39",
+    "inputs/df-cafe-start.png": "e3a0defad138753913a07f2e29654633683e1934ee60dbd98909e7a86fea21ca",
     "licenses/Comfy-workflow-templates-MIT.txt": "5dccd61c80c847cd6b22fa98124010163ab8646e573557a16a5cae31122f2056",
-    "prompt.txt": "53e9727c71f4d1ff97e4f93704cfe08c1bf477f19662a57ff07a701b54dd38c3",
-    "PROTOCOL.md": "c9a6d57bb06f3026a7cb1c47e6943f5c94df336181c435c3c7c2fc7865ed956e",
-    "README.md": "8ed87a77b469e75f43ea894755fa5e7685fa672510b987051de998b6815275b6",
-    "results.csv": "87c77b1c838ba2e949befc5c867832ba03b30ee077132386be825c8d372f7b16",
-    "workflow.json": "b60651eb00d6c16f4796add28811be605b4cfc4ba77235402639204e6c431aac"
+    "prompt.txt": "aca9430a6e4750ab56016ca79f8c74ecef1528cc3cb1c03793a9277f816eeae6",
+    "PROTOCOL.md": "6e5eb62de18247c3e2336dc1893a2fb4b311bc2cc44ed909b77136c6df592723",
+    "README.md": "b0cbd08834d907d9c53e886b86bb319a6c44340e28d481f1d6f727c34105b7ee",
+    "results.csv": "dd5abf5f40cdf9a965f248e8386f0185263d06beda3f53f5a5a636515fff7ec5",
+    "workflow.json": "68641618105222e3b95c37ffc178db8d2bb608bfbecde8123d0ec1356eaacb32"
   }
 }
