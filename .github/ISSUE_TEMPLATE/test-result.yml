@@ -115,9 +115,9 @@ body:
       label: Permission to feature this contribution
       description: You keep ownership. Any website feature will credit your GitHub username and link this issue. This choice does not change the public visibility of the GitHub issue.
       options:
-        - Measurements, notes and submitted media may be featured
-        - Measurements and notes only — link to media without republishing it
         - GitHub discussion only — do not feature on the website
+        - Measurements and notes only — link to media without republishing it
+        - Measurements, notes and submitted media may be featured
     validations:
       required: true
   - type: checkboxes
