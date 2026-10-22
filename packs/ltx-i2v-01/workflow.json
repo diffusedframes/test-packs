@@ -104,7 +104,7 @@
         }
       },
       "widgets_values": [
-        "video/DF_ltx-i2v-01_v0.1.0-pilot",
+        "video/DF_ltx-i2v-01_v0.1.1-pilot",
         "auto",
         "auto"
       ]
@@ -319,7 +319,7 @@
       "title": "DF pilot protocol - read before running",
       "properties": {},
       "widgets_values": [
-        "# Diffused Frames LTX I2V 01 - 0.1.0-pilot\n\nNo baseline render has been run for this pack.\n\nOutput setting: 1280 x 736, duration=3, FPS=24 (73 frames). Prompt enhance OFF.\n\nFirst run seed: 41000. Repeat run seeds: 41001, 41002, 41003. Change the exposed main seed for each run; keep the refinement seed at 42. Confirm fresh sampling, not a cached output.\n\nRecord all outputs, the actual software/model revisions, total workflow seconds and any changes. Do not change precision or dimensions and label the result unchanged.\n\nRead README.md and PROTOCOL.md in the pack. No workflow is automatically executed by this file."
+        "# Diffused Frames LTX I2V 01 - 0.1.1-pilot\n\nNo baseline render has been run for this pack.\n\nOutput setting: 1280 x 736, duration=3, FPS=24 (73 frames). Prompt enhance OFF.\n\nFirst run seed: 41000. Repeat run seeds: 41001, 41002, 41003. Change the exposed main seed for each run; keep the refinement seed at 42. Confirm fresh sampling, not a cached output.\n\nRecord all outputs, the actual software/model revisions, total workflow seconds and any changes. Do not change precision or dimensions and label the result unchanged.\n\nRead README.md and PROTOCOL.md in the pack. No workflow is automatically executed by this file."
       ],
       "color": "#222",
       "bgcolor": "#000"

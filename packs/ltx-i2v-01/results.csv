@@ -1,5 +1,5 @@
 pack_id,pack_version,run_date,run_type,seed,status,workflow_seconds,queue_seconds,peak_vram_value,peak_vram_unit,vram_method,gpu,vram_gb,comfyui_version,changed_settings,output_url,notes
-ltx-i2v-01,0.1.0-pilot,,first,41000,,,,,,,,,,,,
-ltx-i2v-01,0.1.0-pilot,,repeat-1,41001,,,,,,,,,,,,
-ltx-i2v-01,0.1.0-pilot,,repeat-2,41002,,,,,,,,,,,,
-ltx-i2v-01,0.1.0-pilot,,repeat-3,41003,,,,,,,,,,,,
+ltx-i2v-01,0.1.1-pilot,,first,41000,,,,,,,,,,,,
+ltx-i2v-01,0.1.1-pilot,,repeat-1,41001,,,,,,,,,,,,
+ltx-i2v-01,0.1.1-pilot,,repeat-2,41002,,,,,,,,,,,,
+ltx-i2v-01,0.1.1-pilot,,repeat-3,41003,,,,,,,,,,,,

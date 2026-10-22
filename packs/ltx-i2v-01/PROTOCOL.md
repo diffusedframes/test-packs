@@ -1,4 +1,4 @@
-# Run protocol · ltx-i2v-01 / 0.1.0-pilot
+# Run protocol · ltx-i2v-01 / 0.1.1-pilot
 
 **Pilot:** no reference render has been executed. If a control or output differs from this description, report it as a compatibility observation rather than inventing a measurement. No ComfyUI instance, GPU or model is contacted by these documentation files.
 

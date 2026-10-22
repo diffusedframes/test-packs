@@ -1,6 +1,6 @@
 # LTX 2.5 image-to-video: glass portals
 
-**Pack:** `ltx-i2v-01` · **Version:** `0.1.0-pilot` · **State:** pilot, baseline render pending.
+**Pack:** `ltx-i2v-01` · **Version:** `0.1.1-pilot` · **State:** pilot, baseline render pending.
 
 This is an experimental first pack. Its JSON, assets and references have been checked structurally, but **no GPU render has been run for this pack**. Compatibility, resource requirements, the output and the timing procedure still need confirmation on a real run. There are no claimed reference timings or minimum-VRAM promises.
 
