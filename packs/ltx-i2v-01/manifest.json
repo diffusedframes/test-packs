@@ -85,10 +85,10 @@
   "files": {
     "inputs/df-portals-start.png": "c2e28dcb5c5bc51922ccd4073264da7a71fd3ed109b16637de8a4c4955d67c39",
     "licenses/Comfy-workflow-templates-MIT.txt": "5dccd61c80c847cd6b22fa98124010163ab8646e573557a16a5cae31122f2056",
-    "prompt.txt": "f987975aabf411ab780df3bcf18f942af6ba5a919a0b142fed268a79973d1b72",
+    "prompt.txt": "53e9727c71f4d1ff97e4f93704cfe08c1bf477f19662a57ff07a701b54dd38c3",
     "PROTOCOL.md": "187a5ad234fbfeba7aefd2053dcd252b1ad42cd95981f5c1ce6f85dd66ca6dc7",
     "README.md": "ad5e86f2d94622f3341d8fdf6a7afd07e08c07b7c643e9c6bf4e4d1c6d69027e",
-    "results.csv": "6d9098bf40b991be148302c7829695b0e0b4d177c7feb2a5198c02aecf647324",
-    "workflow.json": "963a48d5b3d07e95e593d0515edb32f393bb3ddfe6b4eaa0cae5944946060a99"
+    "results.csv": "58686d182444d1a42be2aaaa0f68ccb2828d33ff45c8201d99b93862d034f87a",
+    "workflow.json": "1b09e68fb2315cd06be43bd6bb6d8658a2f28498de4a63608ceda031975edb5c"
   }
 }
