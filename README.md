@@ -10,7 +10,9 @@ Repeatable tests for AI video, VFX and filmmaking. Download the same inputs and 
 | --- | --- | --- |
 | [LTX 2.5 image-to-video: a cafe moment](packs/ltx-i2v-01/README.md) | 0.2.0-pilot | Pilot · baseline render pending |
 
-The first pack contains an adapted ComfyUI workflow, a shared first frame, an exact prompt, model references, settings, a timing protocol and a blank results sheet. **No GPU workflow has been run or performance result claimed for this pack.** Pilot contributions can help identify compatibility problems; they are not a verified benchmark or a GPU ranking.
+The first pack contains an adapted ComfyUI workflow, a shared first frame, an exact prompt, model references, settings, a timing protocol and a blank results sheet. **A clean reference baseline and reviewed performance results remain pending.** Pilot contributions can help identify compatibility problems; they are not a verified benchmark or a GPU ranking.
+
+**v0.2.0 format clarification:** its controls request 1280 × 736, while the pinned graph's half-size stage and latent alignment yield **1280 × 704**. The archived files remain unchanged. Read [the LTX prompting/input/output review](docs/ltx-2.5-i2v.md) before comparing results.
 
 ## Take part
 
@@ -33,6 +35,8 @@ A GitHub account is required to submit. Issues and attachments are public immedi
 ## Add a pack
 
 Start with [the pack template](templates/pack-template.md) and follow [CONTRIBUTING.md](CONTRIBUTING.md). Give every pack a stable ID and version. A published version is a snapshot: changing its workflow, prompt, input or timing protocol requires a new version. Keep old releases available so submitted results remain interpretable.
+
+Use [the authoring checklist](PACK_AUTHORING.md) to check official sources, prompting conventions, input pixels/preprocessing and exact expected output before release. Source review, file preflight and an authorized reference GPU run are separate checks.
 
 ## Files and permissions
 

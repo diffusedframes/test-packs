@@ -19,6 +19,8 @@ The website is curated manually. It does not execute uploaded workflows, ingest 
 
 ## New or revised packs
 
+Complete [the authoring and release checks](PACK_AUTHORING.md), including official prompting requirements, exact input processing and a requested/derived/measured output contract. The current LTX-specific findings are in [the source review](docs/ltx-2.5-i2v.md). Check documentation against the pinned graph before promising a delivery size, codec or duration.
+
 Use `templates/pack-template.md`. Include workflow JSON, input assets, prompt, manifest, model references with immutable revisions where available, source/license notices, and a measurement protocol. Keep large checkpoints out of Git. Keep outputs in release assets or external links when appropriate.
 
 State validation honestly: `pilot-baseline-pending` until a reference GPU run, actual environment and unedited output are recorded. Record the reference setup separately from an upstream workflow's declared node version. A structural JSON check is not a generation test. Promote a pilot only after compatibility and the measurement method have been checked on a real run.

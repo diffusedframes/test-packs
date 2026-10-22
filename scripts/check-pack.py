@@ -2,6 +2,8 @@
 import hashlib
 import json
 import pathlib
+import struct
+from ltx_formats import frame_duration, two_stage_size
 
 root = pathlib.Path(__file__).resolve().parents[1]
 pack = root / 'packs/ltx-i2v-01'
@@ -31,6 +33,13 @@ assert control[0] == (pack / 'prompt.txt').read_text(encoding='utf-8').strip()
 assert control[1:7] == [False, 3, 1280, 736, 41000, 24], 'Preset mismatch.'
 assert nodes[395]['widgets_values'][0] == pathlib.Path(manifest['input']['path']).name
 assert manifest['preset']['frames'] == control[2] * control[6] + 1
+input_file = pack / manifest['input']['path']
+input_bytes = input_file.read_bytes()
+assert input_bytes[:8] == b'\x89PNG\r\n\x1a\n', 'Expected the shared PNG input.'
+assert input_bytes[12:16] == b'IHDR'
+width, height, bits, colour, _, _, _ = struct.unpack('>IIBBBBB', input_bytes[16:29])
+assert (width, height) == (manifest['input']['width'], manifest['input']['height'])
+assert (bits, colour) == (8, 2), 'Expected this version\'s 8-bit RGB input.'
 for subgraph in graph['definitions']['subgraphs']:
     subnodes = {node['id']: node for node in subgraph['nodes']}
     for link in subgraph.get('links', []):
@@ -40,4 +49,14 @@ for subgraph in graph['definitions']['subgraphs']:
     assert subnodes[339]['widgets_values'] == [41000, 'fixed']
     assert subnodes[338]['widgets_values'] == [42, 'fixed']
     assert subnodes[383]['widgets_values'] == [False]
+    assert subnodes[353]['widgets_values'] == ['a/2']
+    assert subnodes[355]['widgets_values'] == ['a/2']
+    assert subnodes[351]['widgets_values'] == ['scale longer dimension', 1536, 'lanczos']
+    assert subnodes[350]['widgets_values'] == [18]
+requested = (control[3], control[4])
+expected = two_stage_size(*requested)
+print(f'Requested dimensions: {requested[0]}x{requested[1]}; graph-derived output: {expected[0]}x{expected[1]}.')
+print(f'Frame-count duration: {frame_duration(manifest["preset"]["frames"], control[6]):.6f} seconds.')
+if requested != expected:
+    print('KNOWN LEGACY FORMAT ISSUE: read docs/ltx-2.5-i2v.md; the archived preset has not been changed.')
 print('Pack file hashes and JSON structure checked. No GPU run or performance validation performed.')

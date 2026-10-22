@@ -60,7 +60,7 @@ body:
     id: settings
     attributes:
       label: Models, settings and changes
-      description: List model filenames/revisions, precision, resolution, frames/FPS, seeds, sampling/decoding settings and any offloading, tiling or other changes. Link the exact sanitized workflow you ran.
+      description: List model filenames/revisions, precision, requested dimensions and actual saved dimensions, frames/FPS, duration, seeds, sampling/decoding settings and any offloading, tiling or other changes. Include the output container/codecs where known. Link the exact sanitized workflow you ran.
     validations:
       required: true
   - type: dropdown
